@@ -402,11 +402,24 @@
             </li>
           </ul>
         </div>
+        <div class="cont_rassilka">
+          <h2>Подпишитесь на рассылку</h2>
+          <div>
+            <input type="email" class="e-mail-foot" placeholder="E-mail" />
+            <button class="button-foot">Подписаться</button>
+          </div>
+        </div>
       </div>
     </footer>
+    <!-- Модальное окно -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <form class="form">
+          <button class="button-close" data-modal-close>
+            <svg class="icon-Close" width="10" height="10">
+              <use href="./images/symbol-defs-modal.svg#icon-Close"></use>
+            </svg>
+          </button>
           <h2>Оставьте свои данные, мы вам перезвоним</h2>
           <div class="form-field">
             <input
@@ -421,7 +434,55 @@
               <use href="./images/symbol-defs-modal.svg#icon-Human"></use>
             </svg>
           </div>
-          <button data-modal-close>Отправить</button>
+
+          <div class="form-tel">
+            <input
+              type="tel"
+              class="form-inputtel"
+              name="nametel"
+              id="nametel"
+              placeholder=" "
+            />
+            <label for="nametel" class="form-label-tel">Телефон</label>
+            <svg class="icon-Trubka" width="13" height="13">
+              <use href="./images/symbol-defs-modal.svg#icon-Trubka"></use>
+            </svg>
+          </div>
+
+          <div class="form-mail">
+            <input
+              type="email"
+              class="form-inputmail"
+              name="namemail"
+              id="namemail"
+              placeholder=" "
+            />
+            <label for="namemail" class="form-label-mail">Почта</label>
+            <svg class="icon-Konvert" width="15" height="15">
+              <use href="./images/symbol-defs-modal.svg#icon-Konvert"></use>
+            </svg>
+          </div>
+
+          <div class="form-komment">
+            <textarea
+              class="form-areakomment"
+              name="namekomm"
+              id="namekomm"
+              cols="30"
+              rows="10"
+              placeholder=" "
+            ></textarea>
+            <label for="namekomm" class="form-label-komm">Комментарий</label>
+          </div>
+          <div class="form-check">
+            <label class="label-check">
+              <input type="checkbox" class="checkbox" name="checkbox" />
+              <span class="icon"></span>
+              Соглашаюсь с рассылкой и принимаю
+              <a href=""> Условия договора</a>
+            </label>
+          </div>
+          <button class="form-sendbutton">Отправить</button>
         </form>
       </div>
     </div>
